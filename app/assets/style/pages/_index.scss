@@ -19,11 +19,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 88px;
+  @include pad {
+    padding: 30px 39px;
+  }
 }
 .nav {
   display: flex;
 }
-.nav-link {
+.nav-item > .nav-link {
   display: block;
   padding: 8px 32px;
   font-size: 20px;
@@ -34,5 +37,5 @@
   }
 }
 .pe-0 {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
