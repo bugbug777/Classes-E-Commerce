@@ -1,3 +1,8 @@
+@mixin hide_text {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 @mixin pad {
   @media (max-width: 992px) {
     @content;

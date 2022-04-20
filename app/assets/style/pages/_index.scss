@@ -13,9 +13,7 @@
     background-image: url('../images/logo.png');
     background-position: center center;
     background-size: cover;
-    text-indent: 101%;
-    white-space: nowrap;
-    overflow: hidden;
+    @include hide_text;
     @include mobile {
       margin: 0 auto;
       width: 48px;
