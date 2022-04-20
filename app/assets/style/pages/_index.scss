@@ -37,6 +37,12 @@
 }
 .nav {
   display: flex;
+  flex-wrap: wrap;
+}
+.nav-item {
+  @include mobile {
+    width: 50%;
+  }
 }
 .nav-item > .nav-link {
   display: block;
@@ -50,6 +56,10 @@
   @include pad {
     padding: 8px 20px;
   }
+  @include mobile {
+    border: 1px solid #fff;
+    text-align: center;
+  }
 }
 
 // Spacing
@@ -57,7 +67,4 @@
   @include mobile {
     padding: 0;
   }
-}
-.pe-0 {
-  padding-right: 0 !important;
 }
