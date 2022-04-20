@@ -35,6 +35,9 @@
   &:hover {
     opacity: 0.5;
   }
+  @include pad {
+    padding: 8px 20px;
+  }
 }
 .pe-0 {
   padding-right: 0 !important;
