@@ -3,6 +3,10 @@
 }
 .logo {
   display: block;
+  @include mobile {
+    width: 100%;
+    padding: 10px 0;
+  }
   h1 {
     width: 80px;
     height: 48px;
@@ -12,6 +16,11 @@
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
+    @include mobile {
+      margin: 0 auto;
+      width: 48px;
+      height: 30px;
+    }
   }
 }
 .navbar {
@@ -21,6 +30,9 @@
   padding: 30px 88px;
   @include pad {
     padding: 30px 39px;
+  }
+  @include mobile {
+    flex-direction: column;
   }
 }
 .nav {
@@ -37,6 +49,13 @@
   }
   @include pad {
     padding: 8px 20px;
+  }
+}
+
+// Spacing
+.p-sm-0 {
+  @include mobile {
+    padding: 0;
   }
 }
 .pe-0 {
