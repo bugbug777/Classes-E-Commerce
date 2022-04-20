@@ -67,6 +67,9 @@
   background-image: url('../images/banner.png');
   background-position: center center;
   background-size: cover;
+  @include mobile {
+    height: 394px;
+  }
 }
 .banner__content {
   height: 100%;
@@ -78,9 +81,21 @@
   h2 {
     font-size: 64px;
     font-weight: bold;
+    @include pad {
+      font-size: 48px;
+    }
+    @include mobile {
+      font-size: 32px;
+    }
   }
   p {
     font-size: 36px;
+    @include pad {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
   }
 }
 
