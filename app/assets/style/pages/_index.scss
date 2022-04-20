@@ -1,0 +1,38 @@
+.header {
+  background-color: #AA0601;
+}
+.logo {
+  display: block;
+  h1 {
+    width: 80px;
+    height: 48px;
+    background-image: url('../images/logo.png');
+    background-position: center center;
+    background-size: cover;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 88px;
+}
+.nav {
+  display: flex;
+}
+.nav-link {
+  display: block;
+  padding: 8px 32px;
+  font-size: 20px;
+  color: #fff;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.pe-0 {
+  padding-right: 0;
+}
