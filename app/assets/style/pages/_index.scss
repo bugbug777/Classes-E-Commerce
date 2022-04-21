@@ -76,6 +76,38 @@
     }
   }
 }
+.series {
+  padding: 60px 0 48px 0;
+  &__title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  &__list__item {
+    display: flex;
+    margin-bottom: 32px;
+    &__image {
+      width: 57.2%;
+      height: 320px;
+      object-position: center;
+      object-fit: cover;
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+      img {
+        width: 48px;
+        height: 48px;
+        margin-right: 8px;
+      }
+      h3 {
+        font-size: 48px;
+        font-weight: 900;
+        font-style: italic;
+        color: #AA0601;
+      }
+    }
+  }
+}
 
 // Spacing
 .p-sm-0 {
