@@ -74,6 +74,19 @@
     width: 100%;
   }
 }
+.rec__item {
+  width: 23%;
+  min-height: 460px;
+  @include pad {
+    width: 47.8%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+  img {
+    height: 256px;
+  }
+}
 
 // Spacing
 .p-sm-0 {
