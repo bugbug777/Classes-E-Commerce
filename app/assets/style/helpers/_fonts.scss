@@ -21,14 +21,14 @@
   }
   @include pad {
     @each $size, $value in $font-sizes {
-      &md-#{$size} {
+      &-md-#{$size} {
         font-size: $value;
       }
     }
   }
   @include mobile {
     @each $size, $value in $font-sizes {
-      &sm-#{$size} {
+      &-sm-#{$size} {
         font-size: $value;
       }
     }
