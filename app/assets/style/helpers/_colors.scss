@@ -1,16 +1,17 @@
 // Background
 .bg {
-  &-primary {
-    background-color: $primary;
+  @each $theme, $value in $theme-colors {
+    &-#{$theme} {
+      background-color: $value;
+    }
   }
 }
 
 // Text
 .text {
-  &-primary {
-    color: $primary;
-  }
-  &-darkred {
-    color: $darkred;
+  @each $theme, $value in $theme-colors {
+    &-#{$theme} {
+      color: $value;
+    }
   }
 }
