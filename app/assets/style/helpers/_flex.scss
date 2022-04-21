@@ -3,11 +3,9 @@
 }
 
 .flex {
-  // Wrap
   &-wrap {
     flex-wrap: wrap;
   }
-  // Directions
   &-column {
     flex-direction: column;
   }
@@ -17,6 +15,11 @@
   @include pad {
     &-md-row {
       flex-direction: row;
+    }
+  }
+  @include mobile {
+    &-sm-column {
+      flex-direction: column;
     }
   }
 }

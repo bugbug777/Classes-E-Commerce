@@ -60,6 +60,20 @@
     }
   }
 }
+.coBrand {
+  background-image: url('../images/bg.png');
+  background-position: center center;
+  background-size: cover;
+}
+.coBrand__item {
+  width: 48.6%;
+  @include pad {
+    width: 45.8%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
 
 // Spacing
 .p-sm-0 {

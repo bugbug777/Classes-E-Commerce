@@ -1,5 +1,6 @@
 $black: black;
 $white: white;
+$white-50: rgba(255, 255, 255, .5);
 $primary: #aa0601;
 $darkred: #650300; //暗紅色
 $lightpink: #fbf2f2;
@@ -8,6 +9,7 @@ $theme-colors: (
   'primary': $primary,
   'black': $black,
   'white': $white,
+  'white-50': $white-50,
   'darkred': $darkred,
   'lightpink': $lightpink,
 );
