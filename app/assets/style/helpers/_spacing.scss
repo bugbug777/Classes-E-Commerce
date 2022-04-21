@@ -1,0 +1,30 @@
+.m {
+  &t {
+    @each $size, $value in $spacers {
+      &-#{$size} {
+        margin-top: $value !important;
+      }
+    }
+  }
+  &r {
+    @each $size, $value in $spacers {
+      &-#{$size} {
+        margin-right: $value !important;
+      }
+    }
+  }
+  &b {
+    @each $size, $value in $spacers {
+      &-#{$size} {
+        margin-bottom: $value !important;
+      }
+    }
+  }
+  &l {
+    @each $size, $value in $spacers {
+      &-#{$size} {
+        margin-left: $value !important;
+      }
+    }
+  }
+}

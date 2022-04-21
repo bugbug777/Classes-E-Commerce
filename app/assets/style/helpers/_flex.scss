@@ -2,6 +2,12 @@
   display: flex;
 }
 
+// Directions
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+// Alignment
 .justify-content {
   &-between {
     justify-content: space-between;
