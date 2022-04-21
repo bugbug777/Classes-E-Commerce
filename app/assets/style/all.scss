@@ -1,3 +1,4 @@
+@import 'config/variables';
 @import 'config/reset';
 @import 'config/base';
 
@@ -6,5 +7,6 @@
 @import 'components/navbar';
 @import 'components/banner';
 @import 'helpers/fonts';
+@import 'helpers/colors';
 
 @import 'pages/index';
