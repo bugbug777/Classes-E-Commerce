@@ -93,14 +93,25 @@
       height: 320px;
       object-position: center;
       object-fit: cover;
+      @include pad {
+        width: 56.5%;
+        height: 168px;
+      }
     }
     &__content {
       img {
         width: 48px;
         height: 48px;
+        @include pad {
+          width: 40px;
+          height: 40px;
+        }
       }
       h3 {
         font-size: 48px;
+        @include pad {
+          font-size: 28px;
+        }
       }
     }
   }
