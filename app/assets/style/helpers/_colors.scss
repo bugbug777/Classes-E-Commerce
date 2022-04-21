@@ -1,5 +1,15 @@
+// Background
+.bg {
+  &-primary {
+    background-color: $primary;
+  }
+}
+
 // Text
 .text {
+  &-primary {
+    color: $primary;
+  }
   &-darkred {
     color: $darkred;
   }

@@ -83,7 +83,6 @@
     margin-bottom: 40px;
   }
   &__list__item {
-    display: flex;
     margin-bottom: 32px;
     &__image {
       width: 57.2%;
@@ -92,8 +91,6 @@
       object-fit: cover;
     }
     &__content {
-      display: flex;
-      align-items: center;
       img {
         width: 48px;
         height: 48px;
@@ -101,7 +98,6 @@
       }
       h3 {
         font-size: 48px;
-        color: #AA0601;
       }
     }
   }
