@@ -23,38 +23,11 @@
 }
 .pro {
   background-color: #FBF2F2;
-  padding: 60px 0 80px 0;
-  @include pad {
-    padding: 40px 0 24px 0;
-  }
-  @include mobile {
-    padding: 32px 0 8px 0;
-  }
-  &__title {
-    font-size: 48px;
-    color: #650300;
-    margin-bottom: 40px;
-    @include pad {
-      font-size: 32px;
-      margin-bottom: 32px;
-    }
-    @include mobile {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-  }
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @include pad {
-      justify-content: space-around;
-    }
     &__item {
       width: 23%;
       @include pad {
         width: 50%;
-        margin-bottom: 32px;
       }
       @include mobile {
         width: 100%;
@@ -64,11 +37,6 @@
       width: 100px;
       height: 100px;
       margin: 0 auto 16px;
-    }
-    h3 {
-      font-size: 24px;
-      color: #650300;
-      margin-bottom: 8px;
     }
     p {
       max-width: 255px;

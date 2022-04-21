@@ -2,8 +2,12 @@
   display: flex;
 }
 
-// Directions
 .flex {
+  // Wrap
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  // Directions
   &-row-reverse {
     flex-direction: row-reverse;
   }
@@ -21,6 +25,11 @@
   }
   &-around {
     justify-content: space-around;
+  }
+  @include pad {
+    &-md-around {
+      justify-content: space-around;
+    } 
   }
 }
 .align-items {
