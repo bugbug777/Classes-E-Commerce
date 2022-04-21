@@ -92,6 +92,12 @@
 
 // Margins
 .m {
+  &x {
+    &-auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
   &t {
     @each $size, $value in $spacers {
       &-#{$size} {
