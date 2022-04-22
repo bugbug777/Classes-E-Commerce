@@ -111,10 +111,3 @@
     }
   }
 }
-
-// Spacing
-.p-sm-0 {
-  @include mobile {
-    padding: 0;
-  }
-}

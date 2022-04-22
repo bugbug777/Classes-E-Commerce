@@ -1,5 +1,10 @@
 // Paddings
 .p {
+  @each $size, $value in $spacers {
+    &-#{$size} {
+      padding: $value !important;
+    }
+  }
   &y {
     @each $size, $value in $spacers {
       &-#{$size} {
@@ -45,6 +50,11 @@
     }
   }
   @include pad {
+    @each $size, $value in $spacers {
+      &-md-#{$size} {
+        padding: $value !important;
+      }
+    }
     &y {
       @each $size, $value in $spacers {
         &-md-#{$size} {
@@ -91,6 +101,11 @@
     }
   }
   @include mobile {
+    @each $size, $value in $spacers {
+      &-sm-#{$size} {
+        padding: $value !important;
+      }
+    }
     &y {
       @each $size, $value in $spacers {
         &-sm-#{$size} {
