@@ -2,51 +2,68 @@
   &-wrap {
     flex-wrap: wrap;
   }
-  &-column {
-    flex-direction: column;
-  }
-  &-row-reverse {
-    flex-direction: row-reverse;
+  // Directinos
+  @each $direction, $value in $flex-directions {
+    &-#{$direction} {
+      flex-direction: $value;
+    }
   }
   @include pad {
-    &-md-row {
-      flex-direction: row;
+    @each $direction, $value in $flex-directions {
+      &-md-#{$direction} {
+        flex-direction: $value;
+      }
     }
   }
   @include mobile {
-    &-sm-column {
-      flex-direction: column;
+    @each $direction, $value in $flex-directions {
+      &-sm-#{$direction} {
+        flex-direction: $value;
+      }
     }
   }
 }
 
 // Alignment
 .justify-content {
-  &-between {
-    justify-content: space-between;
-  }
-  &-around {
-    justify-content: space-around;
-  }
-  &-center {
-    justify-content: center;
+  @each $type, $value in $flex-alighment-types {
+    &-#{$type} {
+      justify-content: $value;
+    }
   }
   @include pad {
-    &-md-around {
-      justify-content: space-around;
-    } 
+    @each $type, $value in $flex-alighment-types {
+      &-md-#{$type} {
+        justify-content: $value;
+      }
+    }
+  }
+  @include mobile {
+    @each $type, $value in $flex-alighment-types {
+      &-sm-#{$type} {
+        justify-content: $value;
+      }
+    }
   }
 }
 .align-items {
-  &-center {
-    align-items: center;
+  @each $type, $value in $flex-alighment-types {
+    &-#{$type} {
+      align-items: $value;
+    }
   }
-  &-end {
-    align-items: end;
+  @include pad {
+    @each $type, $value in $flex-alighment-types {
+      &-md-#{$type} {
+        align-items: $value;
+      }
+    }
   }
   @include mobile {
-    &-sm-start {
-      align-items: start;
+    @each $type, $value in $flex-alighment-types {
+      &-sm-#{$type} {
+        align-items: $value;
+      }
     }
   }
 }
