@@ -33,12 +33,10 @@
 .series {
   &__list__item {
     &__image {
-      width: 57.2%;
       height: 320px;
       object-position: center;
       object-fit: cover;
       @include pad {
-        width: 56.5%;
         height: 168px;
       }
       @include mobile {
