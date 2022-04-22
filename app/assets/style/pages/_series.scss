@@ -1,0 +1,10 @@
+.img-h-304 {
+  height: 304px;
+  @include mobile {
+    height: 148px;
+  }
+}
+.img-control {
+  object-position: center center;
+  object-fit: cover;
+}
