@@ -72,11 +72,7 @@
   }
 }
 .rec__item {
-  width: 23%;
   min-height: 460px;
-  @include pad {
-    width: 47.8%;
-  }
   img {
     height: 256px;
   }
