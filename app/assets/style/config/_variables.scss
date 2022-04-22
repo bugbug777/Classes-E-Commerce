@@ -8,6 +8,8 @@ $white-50: rgba(255, 255, 255, .5);
 $primary: #aa0601;
 $darkred: #650300; //暗紅色
 $lightpink: #fbf2f2;
+$brown: #5F3E2D;
+$lightbrown: #B75929;
 // Code End
 
 /*
@@ -21,6 +23,8 @@ $theme-colors: (
   'white-50': $white-50,
   'darkred': $darkred,
   'lightpink': $lightpink,
+  'brown': $brown,
+  'lightbrown': $lightbrown
 );
 // Code End
 
@@ -83,7 +87,9 @@ $spacers: (
   12: 48px,
   14: 56px,
   15: 60px,
+  18: 72px,
   20: 80px,
+  21: 104px
 );
 // Code End
 
@@ -101,6 +107,7 @@ $font-sizes: (
 // ===>
   72: 72px, // 不常見的採數字大小命名
   64: 64px,
+  42: 42px,
   32: 32px,
   14: 14px,
 // <===
