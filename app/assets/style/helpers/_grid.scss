@@ -23,4 +23,23 @@
       margin: 0 $gutter/2 $gutter;
     }
   }
+  @include pad {
+    $col-width: 30px;
+    @for $i from 1 through 12 {
+      &-md-#{$i} {
+        width: calc(#{$col-width} * #{$i} + #{$gutter} * #{$i - 1});
+        margin: 0 $gutter/2 $gutter;
+      }
+    }
+  }
+  @include mobile {
+    $gutter: 15px;
+    $col-width: 75px;
+    @for $i from 1 through 4 {
+      &-sm-#{$i} {
+        width: calc(#{$col-width} * #{$i} + #{$gutter} * #{$i - 1});
+        margin: 0 $gutter/2 $gutter;
+      }
+    }
+  }
 }

@@ -1,5 +1,21 @@
 // Paddings
 .p {
+  &y {
+    @each $size, $value in $spacers {
+      &-#{$size} {
+        padding-top: $value !important;
+        padding-bottom: $value !important;
+      }
+    }
+  }
+  &x {
+    @each $size, $value in $spacers {
+      &-#{$size} {
+        padding-left: $value !important;
+        padding-right: $value !important;
+      }
+    }
+  }
   &t {
     @each $size, $value in $spacers {
       &-#{$size} {
@@ -29,6 +45,22 @@
     }
   }
   @include pad {
+    &y {
+      @each $size, $value in $spacers {
+        &-md-#{$size} {
+          padding-top: $value !important;
+          padding-bottom: $value !important;
+        }
+      }
+    }
+    &x {
+      @each $size, $value in $spacers {
+        &-md-#{$size} {
+          padding-left: $value !important;
+          padding-right: $value !important;
+        }
+      }
+    }
     &t {
       @each $size, $value in $spacers {
         &-md-#{$size} {
@@ -59,6 +91,22 @@
     }
   }
   @include mobile {
+    &y {
+      @each $size, $value in $spacers {
+        &-sm-#{$size} {
+          padding-top: $value !important;
+          padding-bottom: $value !important;
+        }
+      }
+    }
+    &x {
+      @each $size, $value in $spacers {
+        &-sm-#{$size} {
+          padding-left: $value !important;
+          padding-right: $value !important;
+        }
+      }
+    }
     &t {
       @each $size, $value in $spacers {
         &-sm-#{$size} {
