@@ -1,0 +1,21 @@
+.d {
+  @each $name, $value in $displays {
+    &-#{$name} {
+      display: $value !important;
+    }
+  }
+  @include pad {
+    @each $name, $value in $displays {
+      &-md-#{$name} {
+        display: $value !important;
+      }
+    }
+  }
+  @include mobile {
+    @each $name, $value in $displays {
+      &-sm-#{$name} {
+        display: $value !important;
+      }
+    }
+  }
+}

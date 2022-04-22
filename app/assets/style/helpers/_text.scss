@@ -16,20 +16,20 @@
 .fs {
   @each $size, $value in $font-sizes {
     &-#{$size} {
-      font-size: $value;
+      font-size: $value !important;
     }
   }
   @include pad {
     @each $size, $value in $font-sizes {
       &-md-#{$size} {
-        font-size: $value;
+        font-size: $value !important;
       }
     }
   }
   @include mobile {
     @each $size, $value in $font-sizes {
       &-sm-#{$size} {
-        font-size: $value;
+        font-size: $value !important;
       }
     }
   }

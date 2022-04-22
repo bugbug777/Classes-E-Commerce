@@ -14,6 +14,13 @@ $theme-colors: (
   'lightpink': $lightpink,
 );
 
+// Display
+$displays: (
+  "block": block,
+  "none": none,
+  "flex": flex
+);
+
 // Grid
 $gutter: 30px;
 $gutter-md: 30px;
