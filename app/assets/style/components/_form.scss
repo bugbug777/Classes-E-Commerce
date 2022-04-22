@@ -1,0 +1,18 @@
+.form-label, .form-control {
+  display: block;
+}
+.form-label {
+  margin-bottom: 4px;
+}
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  &::placeholder {
+    opacity: 0.2;
+  }
+}
+.form-checkbox {
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}

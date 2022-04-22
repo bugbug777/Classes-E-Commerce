@@ -10,3 +10,17 @@
     padding: 0 7.5px;
   }
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$gutter/2;
+  margin-left: -$gutter/2;
+}
+.col {
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      width: calc(#{$col-width} * #{$i} + #{$gutter} * #{$i - 1});
+      margin: 0 $gutter/2 $gutter;
+    }
+  }
+}

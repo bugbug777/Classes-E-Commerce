@@ -14,9 +14,14 @@ $theme-colors: (
   'lightpink': $lightpink,
 );
 
+// Grid
+$gutter: 30px;
+$col-width: 65px;
+
 // Spacers
 $spacers: (
   0: 0,
+  1: 4px,
   2: 8px,
   4: 16px,
   5: 20px,
