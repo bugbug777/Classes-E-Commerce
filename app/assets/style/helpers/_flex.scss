@@ -44,4 +44,9 @@
   &-end {
     align-items: end;
   }
+  @include mobile {
+    &-sm-start {
+      align-items: start;
+    }
+  }
 }
