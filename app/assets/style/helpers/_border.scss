@@ -1,0 +1,12 @@
+.border {
+  border: 1px solid #000;
+  &-bottom {
+    border-bottom: 1px solid #000;
+  }
+  // Colors
+  @each $theme, $value in $theme-colors {
+    &-#{$theme} {
+      border-color: $value;
+    }
+  }
+}
