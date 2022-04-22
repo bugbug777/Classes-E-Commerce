@@ -43,7 +43,7 @@
     @for $i from 1 through 4 {
       &-sm-#{$i} {
         width: calc(#{$col-width-sm} * #{$i} + #{$gutter-sm} * #{$i - 1});
-        margin: 0 $gutter-sm/2 $gutter-sm;
+        margin: 0 $gutter-sm/2 0;
       }
     }
   }
