@@ -1,10 +1,19 @@
+/*
+  Colors
+*/
+// Code Start
 $black: black;
 $white: white;
 $white-50: rgba(255, 255, 255, .5);
 $primary: #aa0601;
 $darkred: #650300; //暗紅色
 $lightpink: #fbf2f2;
+// Code End
 
+/*
+  Themes
+*/
+// Code Start
 $theme-colors: (
   'primary': $primary,
   'black': $black,
@@ -13,23 +22,35 @@ $theme-colors: (
   'darkred': $darkred,
   'lightpink': $lightpink,
 );
+// Code End
 
-// Display
-$displays: (
-  "block": block,
-  "none": none,
-  "flex": flex
-);
-
-// Grid
+/*
+  Grid
+*/
+// Code Start
 $gutter: 30px;
 $gutter-md: 30px;
 $gutter-sm: 15px;
 $col-width: 65px;
 $col-width-md: 30px;
 $col-width-sm: 75px;
+// Code End
 
-// Spacers
+/*
+  Display
+*/
+// Code Start
+$displays: (
+  "block": block,
+  "none": none,
+  "flex": flex
+);
+// Code End
+
+/*
+  Spacers
+*/
+// Code Start
 $spacers: (
   0: 0,
   1: 4px,
@@ -45,8 +66,12 @@ $spacers: (
   15: 60px,
   20: 80px,
 );
+// Code End
 
-// Fonts
+/*
+  Fonts
+*/
+// Code Start
 $font-sizes: (
   1: 48px,
   2: 36px,
@@ -54,9 +79,11 @@ $font-sizes: (
   4: 24px,
   5: 20px,
   6: 16px,
-  // 不常見的採數字大小命名
-  72: 72px,
+// ===>
+  72: 72px, // 不常見的採數字大小命名
   64: 64px,
   32: 32px,
   14: 14px,
+// <===
 );
+// Code End
