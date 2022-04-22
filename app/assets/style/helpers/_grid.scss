@@ -15,6 +15,14 @@
   flex-wrap: wrap;
   margin-right: -$gutter/2;
   margin-left: -$gutter/2;
+  @include pad {
+    margin-right: -$gutter-md/2;
+    margin-left: -$gutter-md/2;
+  }
+  @include mobile {
+    margin-right: -$gutter-sm/2;
+    margin-left: -$gutter-sm/2;
+  }
 }
 .col {
   @for $i from 1 through 12 {
@@ -24,21 +32,18 @@
     }
   }
   @include pad {
-    $col-width: 30px;
     @for $i from 1 through 12 {
       &-md-#{$i} {
-        width: calc(#{$col-width} * #{$i} + #{$gutter} * #{$i - 1});
-        margin: 0 $gutter/2 $gutter;
+        width: calc(#{$col-width-md} * #{$i} + #{$gutter-md} * #{$i - 1});
+        margin: 0 $gutter-md/2 0;
       }
     }
   }
   @include mobile {
-    $gutter: 15px;
-    $col-width: 75px;
     @for $i from 1 through 4 {
       &-sm-#{$i} {
-        width: calc(#{$col-width} * #{$i} + #{$gutter} * #{$i - 1});
-        margin: 0 $gutter/2 $gutter;
+        width: calc(#{$col-width-sm} * #{$i} + #{$gutter-sm} * #{$i - 1});
+        margin: 0 $gutter-sm/2 $gutter-sm;
       }
     }
   }
