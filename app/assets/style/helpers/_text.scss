@@ -5,6 +5,9 @@
 
 // Font
 .fw {
+  &-normal {
+    font-weight: normal;
+  }
   &-medium {
     font-weight: 500;
   }

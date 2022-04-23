@@ -1,0 +1,14 @@
+.img-h-224 {
+  height: 224px;
+  @include pad {
+    height: 164px;
+  }
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  @include pad {
+    width: 20px;
+    height: 20px;
+  }
+}

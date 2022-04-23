@@ -6,7 +6,9 @@ $black: black;
 $white: white;
 $white-50: rgba(255, 255, 255, .5);
 $primary: #aa0601;
+$secondary: #00000020;
 $darkred: #650300; //暗紅色
+$darkblue: #212529;
 $lightpink: #fbf2f2;
 $brown: #5F3E2D;
 $lightbrown: #B75929;
@@ -18,10 +20,12 @@ $lightbrown: #B75929;
 // Code Start
 $theme-colors: (
   'primary': $primary,
+  'secondary': $secondary,
   'black': $black,
   'white': $white,
   'white-50': $white-50,
   'darkred': $darkred,
+  'darkblue': $darkblue,
   'lightpink': $lightpink,
   'brown': $brown,
   'lightbrown': $lightbrown
@@ -88,9 +92,11 @@ $spacers: (
   14: 56px,
   15: 60px,
   18: 72px,
+  19: 76px,
   20: 80px,
   24: 96px,
   26: 104px,
+  32: 128px,
   40: 160px
 );
 // Code End

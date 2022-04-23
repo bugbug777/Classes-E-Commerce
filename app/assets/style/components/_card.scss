@@ -9,6 +9,12 @@
   object-position: center;
   object-fit: cover;
 }
+.card-header {
+  padding: 12px 24px;
+  @include pad {
+    padding: 8px 24px;
+  }
+}
 .card-body {
   padding: 16px;
 }
