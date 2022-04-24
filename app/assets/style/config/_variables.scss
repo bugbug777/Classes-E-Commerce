@@ -50,6 +50,8 @@ $col-width-sm: 75px;
 // Code Start
 $displays: (
   "block": block,
+  "inline": inline,
+  "inline-block": inline-block,
   "none": none,
   "flex": flex
 );
@@ -86,7 +88,9 @@ $spacers: (
   4: 16px,
   5: 20px,
   6: 24px,
+  7: 28px,
   8: 32px,
+  9: 36px,
   10: 40px,
   12: 48px,
   14: 56px,
