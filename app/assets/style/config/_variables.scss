@@ -12,6 +12,7 @@ $darkblue: #212529;
 $lightpink: #fbf2f2;
 $brown: #5F3E2D;
 $lightbrown: #B75929;
+$gray: #555555;
 // Code End
 
 /*
@@ -21,6 +22,7 @@ $lightbrown: #B75929;
 $theme-colors: (
   'primary': $primary,
   'secondary': $secondary,
+  'info': $gray,
   'black': $black,
   'white': $white,
   'white-50': $white-50,
@@ -95,6 +97,7 @@ $spacers: (
   12: 48px,
   14: 56px,
   15: 60px,
+  16: 64px,
   18: 72px,
   19: 76px,
   20: 80px,
