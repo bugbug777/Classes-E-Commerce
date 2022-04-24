@@ -1,28 +1,29 @@
-/*
-  Colors
-*/
+// Colors
 // Code Start
 $black: black;
 $white: white;
 $white-50: rgba(255, 255, 255, .5);
 $primary: #aa0601;
 $secondary: #00000020;
+$dark: #0A0A0A;
+$dark-2: rgba(10, 10, 10, .6);
 $darkred: #650300; //暗紅色
 $darkblue: #212529;
 $lightpink: #fbf2f2;
 $brown: #5F3E2D;
 $lightbrown: #B75929;
 $gray: #555555;
+$gray-700: #707070;
 // Code End
 
-/*
-  Themes
-*/
+// Themes
 // Code Start
 $theme-colors: (
   'primary': $primary,
   'secondary': $secondary,
   'info': $gray,
+  'dark': $dark,
+  'dark-2': $dark-2,
   'black': $black,
   'white': $white,
   'white-50': $white-50,
@@ -30,13 +31,12 @@ $theme-colors: (
   'darkblue': $darkblue,
   'lightpink': $lightpink,
   'brown': $brown,
-  'lightbrown': $lightbrown
+  'lightbrown': $lightbrown,
+  'gray-700': $gray-700
 );
 // Code End
 
-/*
-  Grid
-*/
+// Grid
 // Code Start
 $gutter: 30px;
 $gutter-md: 30px;
@@ -46,9 +46,7 @@ $col-width-md: 30px;
 $col-width-sm: 75px;
 // Code End
 
-/*
-  Display
-*/
+// Display
 // Code Start
 $displays: (
   "block": block,
@@ -59,9 +57,7 @@ $displays: (
 );
 // Code End
 
-/*
-  Flex
-*/
+// Flex
 // Code Start
 $flex-directions: (
   "row": row,
@@ -78,9 +74,7 @@ $flex-alighment-types: (
 );
 // Code End
 
-/*
-  Spacers
-*/
+// Spacers
 // Code Start
 $spacers: (
   0: 0,
@@ -102,15 +96,14 @@ $spacers: (
   19: 76px,
   20: 80px,
   24: 96px,
+  25: 100px,
   26: 104px,
   32: 128px,
   40: 160px
 );
 // Code End
 
-/*
-  Fonts
-*/
+// Fonts
 // Code Start
 $font-sizes: (
   1: 48px,

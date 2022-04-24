@@ -6,6 +6,26 @@
   &-bottom {
     border-bottom: 1px solid #000;
   }
+  @include pad {
+    &-md-0 {
+      border: none;
+    }
+    &-md-bottom {
+      border-bottom: 1px solid #000;
+    }
+  }
+  @include mobile {
+    &-sm {
+      border: 1px solid #000;
+    }
+    &-sm-0 {
+      border: none;
+    }
+    &-sm-bottom {
+      border-bottom: 1px solid #000;
+    }
+  }
+
   // Width
   @for $i from 1 through 4 {
     &-#{$i} {
