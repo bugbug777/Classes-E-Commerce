@@ -1,11 +1,39 @@
----
-title: 常見問題 | 眼鏡世界
-layout: ./app/layout.ejs
-engine: ejs
-current: faq
-display: 'd-none'
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    常見問題 | 眼鏡世界
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="bg-primary">
+    <nav class="navbar p-sm-0">
+      <a href="index.html" class="logo w-sm-100">
+        <h1 class="mx-auto">眼鏡世界</h1>
+      </a>
+      <ul class="nav">
+        <li class="nav-item w-sm-50"><a href="series.html" class="nav-link border-sm border-white">系列鏡框</a></li>
+        <li class="nav-item w-sm-50"><a href="location.html" class="nav-link border-sm border-white">門市據點</a></li>
+        <li class="nav-item w-sm-50"><a href="blog.html" class="nav-link border-sm border-white">部落格</a></li>
+        <li class="nav-item w-sm-50"><a href="faq.html" class="nav-link border-sm border-white last-nav-link">常見問題</a></li>
+      </ul>
+    </nav>
+    <div class="banner d-none">
+      <div
+        class="container banner__content h-100 d-flex flex-column justify-content-center align-items-end text-darkred">
+        <p class="fs-2 fs-md-5 fs-sm-6">Promise-Desert 2020 早春系列</p>
+        <h2 class="fs-64 fs-md-1 fs-sm-32 fw-bold">看得清，才能看得遠</h2>
+      </div>
+    </div>
+  </header>
+
+  
 <div class="container pt-24 pb-32 pt-md-15 pb-md-18 pt-sm-7 pb-sm-9">
   <h2 class="border-left border-4 border-md-2 border-primary fs-1 fs-sm-3 fw-bold pl-4 mb-15 mb-md-10 mb-sm-6">常見問題
     <h3 class="fs-32 fs-sm-5 fw-bold mb-9 mb-md-8 mb-sm-6">我想詢問配鏡問題</h3>
@@ -53,3 +81,51 @@ display: 'd-none'
     </ul>
   </h2>
 </div>
+
+    <footer class="bg-primary pt-8 pb-10 py-md-8 py-sm-6">
+      <div class="container">
+        <div class="d-sm-flex flex-row-reverse justify-content-between align-items-sm-start border-bottom border-white pb-6 pb-md-5 pb-sm-6 mb-8 mb-md-6 mb-sm-4">
+          <div class="d-flex justify-content-between align-items-center mb-6">
+            <ul class="nav d-sm-none">
+              <li class="nav-item"><a class="nav-link fs-6 text-white pl-0 px-6 pl-md-0 px-md-5" href="index.html">首頁</a></li>
+              <li class="nav-item"><a class="nav-link fs-6 text-white px-6 px-md-5" href="series.html">系列鏡框</a></li>
+              <li class="nav-item"><a class="nav-link fs-6 text-white px-6 px-md-5" href="location.html">門市據點</a></li>
+              <li class="nav-item"><a class="nav-link fs-6 text-white px-6 px-md-5" href="blog.html">部落格</a></li>
+              <li class="nav-item"><a class="nav-link fs-6 text-white px-6 px-md-5" href="faq.html">常見問題</a></li>
+            </ul>
+            <ul class="social-links d-flex">
+              <li class="mr-8 mr-md-6"><a href="#"><img class="hover-blink" src="assets/images/ic_social_fb.svg" alt="fb"></a></li>
+              <li class="mr-8 mr-md-6"><a href="#"><img class="hover-blink" src="assets/images/ic_social_ig.svg" alt="ig"></a></li>
+              <li><a href="#"><img class="hover-blink" src="assets/images/ic_social_line.svg" alt="line"></a></li>
+            </ul>
+          </div>
+          <ul class="contact">
+            <li class="contact__item mb-4 mb-md-3 mb-sm-2">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/icon-phone.svg" alt="phone" class="mr-4">
+                <a class="fs-2 fs-md-5 fs-sm-6 text-white hover-blink" href="tel:+0800-000-000">0800-000-000</a>
+              </div>
+            </li>
+            <li class="contact__item">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/icon-mail.svg" alt="mail" class="mr-4">
+                <a class="fs-2 fs-md-5 fs-sm-6 text-white hover-blink" href="mailto:glasses@business.com">glasses@business.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between flex-sm-column">
+          <p class="fs-sm-14 text-white mb-sm-2 ">Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="d-flex flex-sm-column">
+            <li class="mr-12 mr-md-6 mb-sm-2"><a class="fs-14 text-white" href="#">隱私權政策</a></li>
+            <li><a class="fs-14 text-white" href="#">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

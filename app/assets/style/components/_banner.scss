@@ -1,9 +1,0 @@
-.banner {
-  height: 840px;
-  background-image: url('../images/banner.png');
-  background-position: center center;
-  background-size: cover;
-  @include mobile {
-    height: 394px;
-  }
-}
